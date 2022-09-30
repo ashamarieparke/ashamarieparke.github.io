@@ -1,2 +1,2 @@
 # portfolio-site
-This is my porfolio website.
+This is my portfolio website.
