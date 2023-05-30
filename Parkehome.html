@@ -8,13 +8,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asha's Portfolio</title>
     <!--link to CSS file-->
-    <link rel="stylesheet" href="stylesheets/mainstyles.css">
-</head>
-<body>
-<header>
-<h1>Hi, Ashamarie here...</h1>
+    <link rel="stylesheet" href="stylesheets/mainstyle.css">
+    <style>
+        /* CSS for typewriter effect */
+        .typewriter {
+            overflow: hidden;
+            /* Hide overflow to create typewriter effect */
+            border-right: .15em solid orange;
+            /* Vertical blinking cursor */
+            white-space: nowrap;
+            /* Prevent line breaks */
+            letter-spacing: .15em;
+            /* Adjust spacing between characters */
+            animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+        }
+    
+        
+        /* CSS animation for typing effect */
+        @keyframes typing {
+            from {
+                width: 0
+            }
+    
+            to {
+                width: 100%
+            }
+        }
+    
+        /* CSS animation for blinking cursor */
+        @keyframes blink-caret {
+    
+            from,
+            to {
+                border-color: transparent
+            }
+    
+            50% {
+                border-color: orange;
+            }
+        }
+    </style>
+    </head>
+    
 
+        
+        
+<body>
+    <h1 class="typewriter">Hi, Ashamarie here...</h1>
+    
+    <script>
+        // JavaScript to control typewriter effect
+        const typeWriter = document.querySelector('.typewriter');
+        const text = "Hi, Ashamarie here..."; // Text to be displayed
+
+        
+        let i = 0;
+        function type() {
+            if (i < text.length) {
+                typeWriter.textContent == text.charAt(i);
+                i++;
+                setTimeout(type, 50); // Adjust typing speed here (in milliseconds)
+            }
+        }
+
+        // Start the typewriter effect
+        type();
+    </script>
+    </body>
+<header>
 </header>
+
+
 <nav>
 <!--links for my website-->
 <div class="links">
@@ -26,14 +90,15 @@
 </ul>
 
 
+
 </div>
 </nav>
 <main>
 <!--info for home page-->
 <h2>Fascinated by today's technology...</h2>
 <!--image-->
-<img src="assets/ashaa.png" alt="Ashamarie Parke's Profile picture" height="300"
-width="200" id="pfp">
+
+<img src="assets/ashaa.png" alt="Ashamarie Parke's Profile picture" height="300" width="200" id="profile picture" style="display: block; margin: 0 auto;">
 <h3> I am a student who is interested in software and web development, 
     mobile app development,
     UI/UX design, data science, and artificial intelligence.<br>
