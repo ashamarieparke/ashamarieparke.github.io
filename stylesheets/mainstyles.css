@@ -1,23 +1,21 @@
 /*Global Styles*/
 body, main{
     background-color:#000a8f;
-    font-family:Courier New (monospace);
     color: #00ff77;
     font-size: 32px;
 }
 /*Profile*/
 header, h1{
     margin: 0px;
-    font-family: Courier New (monospace);
-
-  
+    font-family: cursive;
   
 }
 h1{
-    font-family: Courier New (monospace);
-    color:rgb(255,243,0);
+    color:rgb(218, 238, 255);
     text-align: center;
 }
+
+
 h2{
     font-family: Merriweather;
     color: #ccff00;
@@ -287,4 +285,68 @@ button:active {
 button:active span:nth-child(1) span:nth-child(2) span:nth-child(2) span:nth-child(2) {
   transition: none;
   transition-delay: none;
+}
+
+/* navigation link*/
+ nav {
+   height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ nav ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+ }
+
+ nav ul li {
+   margin-right: 20px;
+ }
+
+ nav ul li a {
+   text-decoration: none;
+   color: #fff;
+   padding: 10px;
+ }
+
+ nav ul li a:hover {
+   background-color: #555555;
+ }
+/* CSS for projects section */
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #e1bcff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.project {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.project img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.project-content {
+  flex: 1;
+}
+
+.project h2 {
+  color: #333;
+  margin-top: 0;
+  text-align: center;
+}
+
+.project p {
+  color: #666;
 }
