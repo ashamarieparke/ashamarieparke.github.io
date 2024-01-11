@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="stylesheets/mainstyles.css">
     <style>
         /* CSS for typewriter effect */
-        .typewriter {
+        .typewriter
+        {
             overflow: hidden;
             /* Hide overflow to create typewriter effect */
             border-right: .15em solid orange;
@@ -27,7 +28,8 @@
         
         /* CSS animation for typing effect */
         @keyframes typing {
-            from {
+            from 
+            {
                 width: 0
             }
     
@@ -40,46 +42,40 @@
         @keyframes blink-caret {
     
             from,
-            to {
+            to 
+            {
                 border-color: transparent
             }
     
-            50% {
+            50% 
+            {
                 border-color: orange;
             }
         }
     </style>
     </head>
-    
-
-        
-        
 <body>
     <h1 class="typewriter">Hi, Ashamarie here...</h1>
     
     <script>
         // JavaScript to control typewriter effect
         const typeWriter = document.querySelector('.typewriter');
-        const text = "Hi, Ashamarie here..."; // Text to be displayed
-
-        
+        const text = "Hi, Ashamarie here..."; // Text to be displayed       
         let i = 0;
         function type() {
-            if (i < text.length) {
+            if (i < text.length)
+            {
                 typeWriter.textContent == text.charAt(i);
                 i++;
                 setTimeout(type, 50); // Adjust typing speed here (in milliseconds)
             }
         }
-
-        // Start the typewriter effect
-        type();
-    </script>
-    </body>
+// Start the typewriter effect
+type();
+</script>
+</body>
 <header>
 </header>
-
-
 <nav>
 <!--links for my website-->
 <div class="links">
@@ -89,16 +85,12 @@
 <li><a href=Parkeexperience.html>Experience</a></li>
 <li><a href=Parkeprojects.html>Software Projects</a></li>
 </ul>
-
-
-
 </div>
 </nav>
 <main>
 <!--info for home page-->
 <h2>Fascinated by today's technology...</h2>
 <!--image-->
-
 <img src="assets/ashaa.png" alt="Ashamarie Parke's Profile picture" height="300" width="200" id="profile picture" style="display: block; margin: 0 auto;">
 <h3> I am a student who is interested in software and web development, 
     mobile app development, cybersecurity, and artificial intelligence.<br>
@@ -108,14 +100,11 @@
 <!--email button-->
 <div class="email">
 <a href="mailto:parkea2023@fau.edu"><button>Say Hello!</button></a>
-
-
 </div>
-
 </main>
 <!--footer-->
 <footer>
-    &copy; Ashamarie Parke 2024
+&copy; Ashamarie Parke 2024
 </footer>
 </body>
 
