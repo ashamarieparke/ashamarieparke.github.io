@@ -1,0 +1,127 @@
+/* headers*/
+h2,
+h1 {
+    color: rgb(173, 173, 255);
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 40px;
+    margin:10px;
+}
+/* pic and bio*/
+.picAndBio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    margin-right: 290px;
+}
+
+.picAndBio img {
+    width: 200px;
+    margin-right: 30px;
+}
+
+.bio {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    margin-right: 70px;
+
+}
+/* icons*/
+i{
+    cursor: pointer;
+    font-size: 50px;
+    justify-content: space-between;
+    padding-left: 30px;
+}
+/* menu content*/
+#menuContent {
+    display: inline-block;
+    cursor: pointer;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  
+}
+
+
+/*paragraph*/
+p {
+    font-size: large;
+    font-family: Arial, sans-serif;
+}
+
+/*image*/
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.photo2 {
+    margin-left: auto;
+    margin-right: 30px;
+    padding-top: 30px;
+}
+
+/* personal info*/
+div {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    
+
+}
+
+/*skills */
+.skillList {
+    list-style-type: square;
+    padding: 0px;
+    font-size: large;
+    text-align: center;
+}
+
+/*lists*/
+ul {
+    list-style-type: none;
+}
+
+/*links*/
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: purple;
+
+}
+
+/*underlining*/
+span {
+    text-decoration: underline;
+}
+
+/*footer*/
+footer {
+    text-align: center;
+    bottom: 0px;
+    width: 100%;
+    height: 20px;
+    color: darkcyan;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*table*/
+table,
+th,
+td {
+    border: 1px solid black;
+    padding: 5px;
+    font-size: large;
+}
+
+table {
+    margin: auto;
+    width: 70%;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
