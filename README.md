@@ -1,2 +1,4 @@
 # ashamarieparke.github.io
-my portfolio website
+This is my portfolio website.
+
+It displays all of my contact information, experiences, education, skills.
