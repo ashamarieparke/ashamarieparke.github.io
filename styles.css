@@ -35,7 +35,7 @@ h1 {
 
 }
 
-/* icons*/
+/* icons for bio */
 i {
     cursor: pointer;
     font-size: 50px;
@@ -94,6 +94,23 @@ li {
     padding: 0px;
     font-size: large;
     text-align: center;
+}
+.badge-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.badge {
+    display: flex;
+    align-items: center;
+    background: #f1f1f1;
+    padding: 10px 16px;
+    border-radius: 20px;
+    font-size: 16px;
+    gap: 8px;
 }
 
 /*lists*/
