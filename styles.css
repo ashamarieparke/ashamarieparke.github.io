@@ -3,20 +3,21 @@ h2,
 h1 {
     color: rgb(173, 173, 255);
     text-align: center;
-   /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";*/
+    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";*/
     font-family: "Poppins", sans-serif;
     font-size: 40px;
-    margin:10px;
+    margin: 10px;
 }
+
 /* pic and bio*/
 .picAndBio {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
     margin-right: 290px;
     margin-left: 50px;
-	
+
 }
 
 .picAndBio img {
@@ -30,16 +31,18 @@ h1 {
     text-align: center;
     margin-right: 70px;
     margin-left: 50px;
-	
+
 
 }
+
 /* icons*/
-i{
+i {
     cursor: pointer;
     font-size: 50px;
     justify-content: space-between;
     padding-left: 30px;
 }
+
 /* menu content*/
 #menuContent {
     display: inline-block;
@@ -47,7 +50,7 @@ i{
     position: fixed;
     bottom: 0;
     right: 0;
-  
+
 }
 
 
@@ -57,7 +60,7 @@ p {
     /*font-family: Arial, sans-serif;*/
     font-family: "Poppins", sans-serif;
     text-align: center;
-		
+
 }
 
 /*image*/
@@ -80,9 +83,11 @@ div {
     font-family: "Poppins", sans-serif;
 
 }
+
 li {
-     font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
+
 /*skills */
 .skillList {
     list-style-type: square;
@@ -134,4 +139,94 @@ table {
     width: 70%;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+th {
+    background-color: lightgray;
+}
+
+/*-- Experience Section Styles --*/
+/* This section styles the experience cards, including layout, colors, and typography */
+/* It ensures a clean and modern look for the experience section of the portfolio */
+/* It uses flexbox for responsive design and hover effects for interactivity */
+#experience {
+    font-family: 'Segoe UI', sans-serif;
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+#experience h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.experience-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    transition: transform 0.2s;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.company-logo {
+    background-color: #3B82F6;
+    color: white;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 0.9em;
+}
+
+.experience-card h3 {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.date-location {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.experience-card ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.experience-card li {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.experience-card ul {
+    list-style-type: disc;
+    /* ensures bullet points */
+    padding-left: 20px;
+    /* space before bullets */
+    margin: 0;
+}
+
+.experience-card li {
+    margin-bottom: 8px;
+    line-height: 1.4;
 }
