@@ -111,8 +111,18 @@ li {
     border-radius: 20px;
     font-size: 16px;
     gap: 8px;
-}
+    box-shadow: 0 0 0 transparent; /* no shadow by default */
+    transition: 
+        transform 0.2s ease, /* smooth scaling */
+        box-shadow 0.3s ease; /* smooth shadow transition */
+    cursor: default; /* default cursor */
 
+
+}
+.badge:hover {
+    transform: scale(1.05); /* slightly enlarge on hover (105%) */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* add shadow on hover */
+}
 /*lists*/
 ul {
     list-style-type: none;
