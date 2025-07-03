@@ -8,6 +8,39 @@ h1 {
     font-size: 40px;
     margin: 10px;
 }
+/* header */
+#header {
+    padding: 0px 20px;
+    text-align: center;
+}
+
+.greeting {
+    font-family: 'Poppins', cursive, sans-serif;
+    font-size: 2.5em;
+    color: darkslateblue;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.emoji {
+    display: inline-block;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+/* Pulse animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
 
 /* pic and bio*/
 .picAndBio {
