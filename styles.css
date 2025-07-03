@@ -11,34 +11,29 @@ h1 {
 
 /* pic and bio*/
 .picAndBio {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin-right: 290px;
-    margin-left: 50px;
-
-
+    display: flex; 
+    flex-direction: column;  /* stacks the image and text vertically */
+    align-items: center; /* centers the content */
+    padding: 30px 20px; 
+    max-width: 800px;  /* maximum width for the bio section */
+    margin: auto; /* centers the content */
+    text-align: center; 
 }
 
-.picAndBio img {
-    width: 200px;
-    margin-right: 50px;
-    /* border around the image */
-    border: 2px solid darkslateblue; /* border color */
-    border-radius: 10px; /* rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* subtle shadow */
-    transition: transform 0.2s ease; /* smooth scaling */
+.bio-pic {
+    width: 150px; /* size of the profile picture */
+    height: 150px; /* size of the profile picture */
+    object-fit: cover; /* ensures the image covers the area without distortion */
+    border-radius: 50%; /* makes the image circular */
+    margin-bottom: 20px; /* space between image and text */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.bio {
-    font-size: 20px;
-    line-height: 1.5;
-    text-align: center;
-    margin-right: 70px;
-    margin-left: 50px;
-
-
+.bio-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    color: #333;
+    line-height: 1.6; /* improves readability */
 }
 
 /* icons for bio */
@@ -139,44 +134,14 @@ li {
 }
 
 #education h2 {
-    font-size: 2em;
+    font-size: 5em;
     color: #333;
     border-bottom: 2px solid coral;
     padding-bottom: 10px;
     margin-bottom: 30px;
 }
 
-.edu-list {
-    list-style: none;
-    padding: 0;
-}
 
-.edu-item {
-    margin-bottom: 30px;
-    padding-left: 15px;
-    border-left: 4px solid coral;
-}
-
-.edu-item h3 {
-    margin: 0;
-    font-size: 1.2em;
-    color: #111;
-}
-
-.edu-item p {
-    margin: 5px 0;
-    color: #555;
-}
-
-.edu-item ul {
-    padding-left: 20px;
-    list-style-type: disc;
-    color: #444;
-}
-
-.edu-item ul li {
-    margin-bottom: 4px; }
-    
 /*lists*/
 ul {
     list-style-type: none;
