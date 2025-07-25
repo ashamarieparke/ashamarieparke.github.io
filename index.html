@@ -127,52 +127,93 @@
     </article>
   
         
-    <!-- Projects Section with table -->
-    <section id="Projects">
-        <h2 style="color:forestgreen;">Projects</h2>
-        <table border="1">
-            <tr>
-                <th>Software Projects</th>
-                <th>Description</th>
-                <th>Language(s) Used</th>
-            </tr>
-            <td><a href="https://github.com/ashamarieparke/RecipePal" target="_blank"><span>RecipePal App</span></a>
-            </td>
-            <td>An iOS app that allows the user to search for recipes based on the ingredients that they have at home.
-            </td>
-            <td>Swift,SwiftUI, Xcode</td>
-            </tr>
-            <tr>
-                <td><a href="https://github.com/ashamarieparke/readme-generator" target="_blank"><span>ReadMe Generator
-                            for GitHub </span></a></td>
-                <td>A readme generator that allows developers/engineers to create a README template that they can use to
-                    showcase information based on their projects.</td>
-                <td>JavaScript, Node.JS, Command Line Interface</td>
-            </tr>
-            <tr>
-                <td><a href="https://github.com/ashamarieparke/word-guessing-game" target="_blank"><span>Word Guessing
-                            Game</span></a></td>
-                <td>Simple word guessing game where the user has to guess a word from the word.py file with just 7
-                    guesses.
-                    The average user guesses the word in 6.5 guesses.</td>
-                <td>Python</td>
-            </tr>
-            <tr>
-                <td><a href="https://github.com/ashamarieparke/RPSgame" target="_blank"><span>Rock Paper
-                            Scissors</span></a></td>
-                <td>Classic classic rock-paper-scissors game played against a computer
-                    that chooses random choices for decision making.</td>
-                <td>Python</td>
-            </tr>
-            <tr>
-                <td><a href="https://github.com/ashamarieparke/ashamarieparke.github.io" target="_blank"><span>Portfolio
-                            Website</span></a></td>
-                <td>Built a website showcasing my personal projects, accomplishments, education, skills, and contact
-                    information.</td>
-                <td>HTML5/CSS3,Bootstrap, JavaScript</td>
-            </tr>
-        </table>
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+    
+            <!-- Project 1 -->
+            <div class="project-card" data-animate>
+                <div class="project-icon">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <div class="project-info">
+                    <h3>RecipePal App</h3>
+                    <p>An iOS app that allows the user to search for 
+                        recipes based on the ingredients that they have at home using the Spoonacular API. 
+                        Users can also save their favorite recipes by clicking on the heart icon.</p>
+                    <p class="tech-stack">Swift, SwiftUI, Spoonacular API </p>
+                    <div class="project-links">
+                        <a href="https://github.com/ashamarieparke/RecipePal" target="_blank">GitHub</a>
+                        <a href="https://github.com/ashamarieparke/RecipePal/blob/main/DemoGIF.gif" target="_blank">GIF Demo</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="project-card" data-animate>
+                <div class="project-icon">
+                    <i class="fas fa-file-alt"></i>
+                </div>
+                <div class="project-info">
+                    <h3>Readme Generator for Github</h3>
+                    <p>A readme generator that allows developers/engineers to create a README template that they can use to
+                    showcase information based on their projects.</p>
+                    <p class="tech-stack">JavaScript, Node.js, Command Line Interface (CLI)</p>
+                    <div class="project-links">
+                        <a href="https://github.com/ashamarieparke/readme-generator" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="project-card" data-animate>
+                <div class="project-icon">
+                    <i class="fas fa-gamepad"></i>
+                    </div>
+                <div class="project-info">
+                    <h3>Word Guessing Game</h3>
+                    <p>A simple word guessing game where the user has to guess a word from the word.py file with just 7 guesses.
+                        The average user guesses the word in 6.5 guesses.</p>
+                    <p class="tech-stack">Python</p>
+                    <div class="project-links">
+                        <a href="https://github.com/ashamarieparke/word-guessing-game" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Project 4 -->
+            <div class="project-card" data-animate>
+                <div class="project-icon">
+                    <i class="fas fa-hand-rock"></i>
+                </div>
+                <div class="project-info">
+                    <h3>Rock Paper Scissors</h3>
+                    <p>A classic rock-paper-scissors game played against a computer that chooses random choices for decision making.</p>
+                    <p class="tech-stack">Python</p>
+                    <div class="project-links">
+                        <a href="https://github.com/ashamarieparke/RPSgame" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 5 -->
+            <div class="project-card" data-animate>
+                <div class="project-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <div class="project-info">
+                    <h3>Portfolio Website</h3>
+                    <p>Built a website showcasing my personal projects, education, skills, and contact information.</p>
+                    <p class="tech-stack">HTML5, CSS3, Bootstrap, JavaScript</p>
+                    <div class="project-links">
+                        <a href="https://github.com/ashamarieparke/ashamarieparke.github.io " target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+    
+        </div>
     </section>
+
     <!--Extracurricular-->
     <!-- <section id="Extracurriculars" style="text-align: center;">
         <h2 style="color:deeppink;">Extracurricular Activities</h2>
