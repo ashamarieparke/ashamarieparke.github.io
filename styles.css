@@ -203,6 +203,7 @@ footer {
     font-size: large;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 /* projects section */
 .projects-section {
     padding: 60px 20px;
@@ -220,6 +221,11 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 25px;
+    /* ensure 3 cards per row on larger screens */
+    justify-items: center;
+    /* center the cards */
+    max-width: 1200px;
+    margin: auto;
 }
 
 /* Text Card Style */
