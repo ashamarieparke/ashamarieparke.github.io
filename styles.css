@@ -55,7 +55,7 @@ h1 {
 
 .bio-pic {
     width: 150px; /* size of the profile picture */
-    height: 150px; /* size of the profile picture */
+    height: 150px; 
     object-fit: cover; /* ensures the image covers the area without distortion */
     border-radius: 50%; /* makes the image circular */
     margin-bottom: 20px; /* space between image and text */
@@ -150,7 +150,10 @@ li {
         transform 0.2s ease, /* smooth scaling */
         box-shadow 0.3s ease; /* smooth shadow transition */
     cursor: default; /* default cursor */
-
+    /* ensures that the badges are 5 per row on larger screens */
+    flex: 1 1 calc(20% - 10px); /* flexible width with gap adjustment */
+    max-width: 180px; /* maximum width for each badge */
+    color: #333; /* text color */
 
 }
 .badge:hover {
@@ -221,7 +224,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 25px;
-    /* ensure 3 cards per row on larger screens */
+    /* ensures 3 cards per row on larger screens */
     justify-items: center;
     /* center the cards */
     max-width: 1200px;
