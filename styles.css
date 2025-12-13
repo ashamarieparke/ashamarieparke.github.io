@@ -67,7 +67,12 @@ h1 {
     font-size: 1.1em;
     color: #333;
     line-height: 1.6; /* improves readability */
+    max-width: 600px; /* limits the width of the text for better readability */
+    cursor: default; /* default cursor for text */
+    letter-spacing: 0.5px; /* slight spacing between letters */
+    display: flex;
 }
+
 
 /* icons for bio */
 i {
