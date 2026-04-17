@@ -139,7 +139,7 @@ function App() {
             <p className="eyebrow">Computer Science student at Florida Atlantic University</p>
             <h1>Building polished products with software, AI, and a sharp eye for detail.</h1>
             <p className="hero-text">
-              I like turning ideas into clean, useful interfaces and practical systems. I have experience with HTML,
+              I like turning ideas into clean, useful interfaces and practical systems. I have experience with React, HTML,
               CSS, JavaScript, Python, Java, and C++, and I am looking for summer internship opportunities where I can
               contribute and keep learning.
             </p>
