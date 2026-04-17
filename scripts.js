@@ -1,3 +1,5 @@
+// nav items, stats, skills, experience, and projects data for easy updates and
+//  mapping in the UI
 const navItems = [
   { label: 'About', href: '#about' },
   { label: 'Education', href: '#education' },
@@ -100,6 +102,7 @@ const projects = [
   },
 ];
 
+// reusable section title component for consistency and easy updates across sections
 function SectionTitle({ eyebrow, title, description }) {
   return (
     <div className="section-heading">
@@ -125,7 +128,11 @@ function App() {
           ))}
         </nav>
       </header>
-
+{/* Main content area with hero section, stats, about, education, experience, skills,
+ projects, and contact CTA sections. Each section uses the SectionTitle component 
+ for consistent styling and structure. The hero section includes a portrait 
+ and contact links, while the projects section maps over the projects array to 
+ display project cards with links. */}
       <main className="layout">
         <section className="hero">
           <div className="hero-copy reveal">
@@ -180,7 +187,9 @@ function App() {
             </div>
           </aside>
         </section>
-
+      {/* Stats section that maps over the stats array to display key highlights 
+      in a grid layout. Each stat card has a reveal animation with a staggered delay
+       for a dynamic entrance effect. */}
         <section className="stats-grid">
           {stats.map((stat, index) => (
             <article key={stat.label} className="stat-card reveal" style={{ animationDelay: `${index * 90}ms` }}>
@@ -190,15 +199,17 @@ function App() {
           ))}
         </section>
 
+        {/* About section with a brief introduction and overview of interests and experience.*/}
         <section id="about" className="info-card reveal">
           <SectionTitle eyebrow="About" title="A quick snapshot" />
           <p>
             I enjoy exploring software engineering, product management, and AI/ML. I have built a recipe-finding app
-            in Swift, a personal website with HTML, CSS, and JavaScript, and several projects that
+            in Swift, multiple web applications, and several projects that
             helped me grow my fundamentals across different languages and workflows.
           </p>
         </section>
-
+        {/* Education section that highlights the current degree program and expected graduation date.
+         It features a timeline item with an icon and uses the SectionTitle component for styling. */}
         <section id="education" className="info-card reveal">
           <SectionTitle eyebrow="Education" title="Florida Atlantic University" />
           <div className="timeline-item">
@@ -211,7 +222,8 @@ function App() {
             </div>
           </div>
         </section>
-
+        {/* Experience section that maps over the experience array to display past roles and responsibilities. Each experience card includes the company, title, 
+        date, location, and key bullet points about the work done.  */}
         <section id="experience" className="info-card reveal">
           <SectionTitle eyebrow="Experience" title="Hands-on work" />
           <div className="experience-list">
@@ -235,7 +247,9 @@ function App() {
             ))}
           </div>
         </section>
-        
+        {/* Skills section that maps over the skills array to display a 
+        grid of skill pills. Each pill includes an icon and the skill name, 
+        with the icon colored according to the specified color in the data.  */}
         <section id="skills" className="info-card reveal">
           <SectionTitle eyebrow="Skills" title="Tools I use" />
           <div className="skill-grid">
@@ -247,7 +261,9 @@ function App() {
             ))}
           </div>
         </section>
-
+          {/* Projects section that maps over the projects array to display a grid of
+           project cards. Each card includes an icon, title, description, tech stack,
+            and links to GitHub or live demos. */}
         <section id="projects" className="info-card reveal">
           <SectionTitle
             eyebrow="Projects"
@@ -276,7 +292,8 @@ function App() {
             ))}
           </div>
         </section>
-
+        {/* Contact CTA section that encourages visitors to get in touch. It includes a heading, 
+        a brief message, and a prominent button that opens the user's email client to send an email.*/}
         <section className="contact-cta reveal">
           <h2>Like what you see?</h2>
           <p>I'm always excited to connect with fellow builders, potential mentors, and anyone interested in chatting about software, AI, or product design!</p>
@@ -284,7 +301,7 @@ function App() {
             Get in Touch
           </a>
         </section>
-
+        {/* Footer section with a simple copyright notice. */}
       <section className="footer">
         <p>&copy; {new Date().getFullYear()} Ashamarie Parke. All rights reserved.</p>
       </section>
