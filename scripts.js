@@ -15,6 +15,7 @@ const stats = [
 ];
 
 const skills = [
+  { name: 'React', icon: 'fa-brands fa-react', color: '#61dafb' },
   { name: 'HTML5', icon: 'fa-brands fa-html5', color: '#e34c26' },
   { name: 'CSS3', icon: 'fa-brands fa-css3-alt', color: '#2965f1' },
   { name: 'JavaScript', icon: 'fa-brands fa-js-square', color: '#f7df1e' },
